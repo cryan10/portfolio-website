@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
 ---
 
 <Layout>
@@ -12,30 +13,32 @@ import Layout from '../layouts/Layout.astro';
 			<section class="experience-section">
 				<h2>Experience</h2>
 
-				<div class="card">
-					<h3>ChurnZero</h3>
-					<p><strong>Front-End Software Engineer</strong></p>
-					<p class="time-and-place">Washington, DC (Remote)</p>
-					<p class="time-and-place">2023-present</p>
-					<p class="responsibilities">
+				<Card
+					title="ChurnZero"
+					subtitle="Front-End Software Engineer"
+					location="Washington, DC (Remote)"
+					date="2023-present"
+				>
+					<p>
 						In a team of 3, building and maintaining web components for the
 						company’s component library. The component library provides the
 						front-end building blocks for ChurnZero’s customer-facing
 						application.
 					</p>
-				</div>
+				</Card>
 
-				<div class="card">
-					<h3>Embrace Pet Insurance</h3>
-					<p><strong>Lead Front-End Software Engineer</strong></p>
-					<p class="time-and-place">Cleveland, OH</p>
-					<p class="time-and-place">2019-2023</p>
-					<p class="responsibilities">
+				<Card
+					title="Embrace Pet Insurance"
+					subtitle="Lead Front-End Software Engineer"
+					location="Cleveland, OH"
+					date="2019 - 2023"
+				>
+					<p>
 						Front-end web developer supporting the company’s website and 3
 						customer-facing applications. Leading a team of 6 through the
 						project lifecycle, including gathering project requirements and
 						leading all Scrum events.
-						<ul>
+						<ul class="achievements">
 							<li>
 								<b>Policy Restructure</b> - Leading a team of 6 to add new policy
 								options to all internal and external applications. Responsibilities
@@ -65,20 +68,21 @@ import Layout from '../layouts/Layout.astro';
 							</li>
 						</ul>
 					</p>
-				</div>
+				</Card>
 
-				<div class="card">
-					<h3>Emerson</h3>
-					<p><strong>Software Developer</strong></p>
-					<p class="time-and-place">Berea, OH</p>
-					<p class="time-and-place">2018 - 2019</p>
-					<p class="responsibilities">
+				<Card
+					title="Emerson"
+					subtitle="Software Developer"
+					location="Berea, OH"
+					date="2018 - 2019"
+				>
+					<p>
 						Contributed to Emerson’s Commercial Residential web development team
 						as both a front-end .NET developer and Scrum Master. Involved in the
 						full lifecycle of development, including scoping out project
 						requirements, writing tickets and quality assurance.
 					</p>
-					<ul>
+					<ul class="achievements">
 						<li>
 							<b>Klauke Website Migration</b> - In a team of 6, migrated over customer,
 							media and product data to a new CMS platform. Gathered requirements
@@ -91,20 +95,21 @@ import Layout from '../layouts/Layout.astro';
 							data to the new Emerson CMS platform. Scrum Master for a team of 6.
 						</li>
 					</ul>
-				</div>
+				</Card>
 
-				<div class="card">
-					<h3>United Consumer Financial Services</h3>
-					<p><strong>Full-Stack Developer</strong></p>
-					<p class="time-and-place">Westlake, OH</p>
-					<p class="time-and-place">2017 - 2018</p>
-					<p class="responsibilities">
+				<Card
+					title="United Consumer Financial Services"
+					subtitle="Full-Stack Developer"
+					location="Westlake, OH"
+					date="2017 - 2018"
+				>
+					<p>
 						Contributed to the design, development, testing, maintenance and
 						enhancement of UCFS’s ASP.NET and .NET Core MVC web applications.
 						Also contributing to data warehousing and computer networking
 						projects.
 					</p>
-					<ul>
+					<ul class="achievements">
 						<li>
 							<b>Personal Loan Application</b>- Developed a responsive web
 							application in a team of 3 for UCFS’s leading client. The
@@ -118,7 +123,7 @@ import Layout from '../layouts/Layout.astro';
 							current paper application.
 						</li>
 					</ul>
-				</div>
+				</Card>
 			</section>
 
 			<section class="education-section">
@@ -223,15 +228,6 @@ import Layout from '../layouts/Layout.astro';
 		margin: 0;
 	}
 
-	.time-and-place {
-		color: var(--gray);
-		font-size: 1.4rem;
-	}
-
-	.responsibilities {
-		margin-top: 0.2rem;
-	}
-
 	.education-section {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -248,15 +244,9 @@ import Layout from '../layouts/Layout.astro';
 		padding: 0;
 	}
 
-	.card {
-		background-color: var(--white);
-		color: var(--black);
-		padding: 2rem;
-		border-radius: 0.6rem;
-	}
-
-	.card h3 {
-		color: var(--color-accent);
+	.achievements li {
+		list-style-type: disc;
+		padding-top: 0.5rem;
 	}
 
 	h1 {
