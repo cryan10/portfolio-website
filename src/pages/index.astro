@@ -62,7 +62,6 @@ import Layout from '../layouts/Layout.astro';
 		display: grid;
 		justify-items: center;
 		grid-template-rows: 1fr auto;
-		grid-row-gap: 3rem;
 		margin: 4rem;
 	}
 	.hero {
@@ -73,6 +72,12 @@ import Layout from '../layouts/Layout.astro';
 	}
 	h1 {
 		font-family: 'Press Start 2P', serif;
-		font-size: 4.2rem;
+		font-size: 3.2rem;
+	}
+
+	@media screen and (min-width: 768px) {
+		.container {
+			grid-row-gap: 3rem;
+		}
 	}
 </style>
