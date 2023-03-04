@@ -1,0 +1,43 @@
+---
+export interface Props {
+	title: string;
+	subtitle: string;
+	date: string;
+	location: string;
+}
+const { title, subtitle, date, location } = Astro.props as Props;
+---
+
+<div>
+	<h3>{title}</h3>
+	<ul>
+		<li class="subtitle"><strong>{subtitle}</strong></li>
+		<li>{date}</li>
+		<li>{location}</li>
+	</ul>
+	<slot />
+</div>
+
+<style>
+	div {
+		background-color: var(--white);
+		color: var(--black);
+		padding: 2rem;
+		border-radius: 0.6rem;
+	}
+
+	h3 {
+		color: var(--color-accent);
+		margin: 0 0 0.5rem;
+	}
+
+	ul {
+		padding-left: 0;
+		margin-top: 0;
+	}
+
+	li:not(.subtitle) {
+		color: var(--gray);
+		font-size: 1.4rem;
+	}
+</style>
