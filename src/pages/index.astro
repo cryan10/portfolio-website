@@ -2,4 +2,63 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout><h1>Carrie Ryan</h1></Layout>
+<Layout>
+	<div
+		class="container"
+		role="presentation"
+	>
+		<div
+			class="hero"
+			role="presentation"
+		>
+			<h1>Carrie Ryan</h1>
+			<p>Frontend Engineer from Cleveland, OH</p>
+		</div>
+		<div>
+			<p>
+				Hello, and welcome! My name is Carrie and I am frontend web developer
+				from Cleveland, Ohio. I've been a developer since 2017, and I'm Team
+				Frontend through and through. I'm a firm believer in writing
+				straightforward code. I get so much satisfaction when I can write code
+				that looks like a sentence. Simplicity, so beautiful.
+			</p>
+			<p>
+				I'm fascinated with accessibility and Atomic Design. I try to stay on
+				top of the latest tech. For example, this website is built with Astro!
+				It's incredible to see all the things that are happening with CSS, and
+				how maybe we won't need SASS or LESS in the next 10 years.
+			</p>
+			<p>
+				I also really enjoy learning about Scrum and Agile. I oddly enjoy
+				writing tickets and leading Scrum events like Retrospectives. I've been
+				told I'm pretty good at leading a group discussion.
+			</p>
+			<p>
+				I'm a creative spirit at heart. In my free time, I like to write and
+				make music. I've played guitar for over 15 years, and I just recently
+				started piano! I also love running, biking and aerial arts.
+			</p>
+			<p>
+				If we haven't already, let's connect on LinkedIn. Thanks for stopping
+				by!
+			</p>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.container {
+		display: grid;
+		justify-items: center;
+		grid-template-rows: 1fr auto;
+		grid-row-gap: 3rem;
+		margin: 4rem;
+	}
+	.hero {
+		text-align: center;
+	}
+	h1 {
+		font-family: 'Press Start 2P', serif;
+		font-size: 4.2rem;
+	}
+</style>
