@@ -14,10 +14,10 @@ import Layout from '../layouts/Layout.astro';
 
 				<div class="card">
 					<h3>ChurnZero</h3>
-					<p>Front-End Software Engineer</p>
-					<p>Washington, DC (Remote)</p>
-					<p>2023-present</p>
-					<p>
+					<p><strong>Front-End Software Engineer</strong></p>
+					<p class="time-and-place">Washington, DC (Remote)</p>
+					<p class="time-and-place">2023-present</p>
+					<p class="responsibilities">
 						In a team of 3, building and maintaining web components for the
 						company’s component library. The component library provides the
 						front-end building blocks for ChurnZero’s customer-facing
@@ -27,10 +27,10 @@ import Layout from '../layouts/Layout.astro';
 
 				<div class="card">
 					<h3>Embrace Pet Insurance</h3>
-					<p>Lead Front-End Software Engineer</p>
-					<p>Cleveland, OH</p>
-					<p>2019-2023</p>
-					<p>
+					<p><strong>Lead Front-End Software Engineer</strong></p>
+					<p class="time-and-place">Cleveland, OH</p>
+					<p class="time-and-place">2019-2023</p>
+					<p class="responsibilities">
 						Front-end web developer supporting the company’s website and 3
 						customer-facing applications. Leading a team of 6 through the
 						project lifecycle, including gathering project requirements and
@@ -69,10 +69,10 @@ import Layout from '../layouts/Layout.astro';
 
 				<div class="card">
 					<h3>Emerson</h3>
-					<p>Software Developer</p>
-					<p>Berea, OH</p>
-					<p>2018 - 2019</p>
-					<p>
+					<p><strong>Software Developer</strong></p>
+					<p class="time-and-place">Berea, OH</p>
+					<p class="time-and-place">2018 - 2019</p>
+					<p class="responsibilities">
 						Contributed to Emerson’s Commercial Residential web development team
 						as both a front-end .NET developer and Scrum Master. Involved in the
 						full lifecycle of development, including scoping out project
@@ -95,10 +95,10 @@ import Layout from '../layouts/Layout.astro';
 
 				<div class="card">
 					<h3>United Consumer Financial Services</h3>
-					<p>Full-Stack Developer</p>
-					<p>Westlake, OH</p>
-					<p>2017 - 2018</p>
-					<p>
+					<p><strong>Full-Stack Developer</strong></p>
+					<p class="time-and-place">Westlake, OH</p>
+					<p class="time-and-place">2017 - 2018</p>
+					<p class="responsibilities">
 						Contributed to the design, development, testing, maintenance and
 						enhancement of UCFS’s ASP.NET and .NET Core MVC web applications.
 						Also contributing to data warehousing and computer networking
@@ -213,10 +213,23 @@ import Layout from '../layouts/Layout.astro';
 		display: flex;
 		flex-direction: column;
 		row-gap: 2rem;
-		background-color: var(--color-secondary_s30);
-		color: var(--white);
+		/* background-color: var(--color-secondary_s30); */
 		padding: 2rem;
 		border-radius: 0.4rem;
+	}
+
+	.experience-section p,
+	h2 {
+		margin: 0;
+	}
+
+	.time-and-place {
+		color: var(--gray);
+		font-size: 1.4rem;
+	}
+
+	.responsibilities {
+		margin-top: 0.2rem;
 	}
 
 	.education-section {
@@ -244,11 +257,6 @@ import Layout from '../layouts/Layout.astro';
 
 	.card h3 {
 		color: var(--color-accent);
-	}
-
-	h2 {
-		margin: 0;
-		/* color: var(--color-primary); */
 	}
 
 	h1 {
