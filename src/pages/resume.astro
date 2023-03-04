@@ -4,224 +4,207 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout>
-	<div>
+	<div class="header">
 		<h1>Carrie Ryan</h1>
 		<i>Frontend Engineer</i>
 	</div>
 	<div class="content-container">
-		<div>
-			<section class="experience-section">
-				<h2>Experience</h2>
+		<section class="experience-section">
+			<h2>Experience</h2>
 
-				<Card
-					title="ChurnZero"
-					subtitle="Front-End Software Engineer"
-					location="Washington, DC (Remote)"
-					date="2023-present"
-				>
-					<p>
-						In a team of 3, building and maintaining web components for the
-						company’s component library. The component library provides the
-						front-end building blocks for ChurnZero’s customer-facing
+			<Card
+				title="ChurnZero"
+				subtitle="Front-End Software Engineer"
+				location="Washington, DC (Remote)"
+				date="2023-present"
+			>
+				<p>
+					In a team of 3, building and maintaining web components for the
+					company’s component library. The component library provides the
+					front-end building blocks for ChurnZero’s customer-facing application.
+				</p>
+			</Card>
+
+			<Card
+				title="Embrace Pet Insurance"
+				subtitle="Lead Front-End Software Engineer"
+				location="Cleveland, OH"
+				date="2019 - 2023"
+			>
+				<p>
+					Front-end web developer supporting the company’s website and 3
+					customer-facing applications. Leading a team of 6 through the project
+					lifecycle, including gathering project requirements and leading all
+					Scrum events.
+					<ul>
+						<li>
+							<b>Policy Restructure</b> - Leading a team of 6 to add new policy options
+							to all internal and external applications. Responsibilities include
+							gathering requirements and writing user stories; leading team through
+							Scrum events; teaching team to use new work management software, Jira.
+							Sole front-end developer making front-end updates to all internal and
+							external applications.
+						</li>
+						<li>
+							<b>Embrace Pet Insurance Rebrand</b> - Main point of contact for contractors
+							working on the company’s customer-facing applications. Created documentation,
+							trained contractors in Embrace’s code standards and performed code
+							reviews.
+						</li>
+						<li>
+							<b>Website Migration</b> - In a team of 3, transitioned customer-facing
+							website to headless CMS. Built web scraping tool to migrate 95% of
+							website data to new site. Gathered requirements and created user stories;
+							wrote documentation for best practices and code standards; and performed
+							code reviews.
+						</li>
+						<li>
+							<b>Quote Engine Revamp</b> - In a team of 6, modernized the entire
+							tech stack of our policy purchase application. Converted the front-end
+							from AngularJS to Angular. Integrated Google Tag Manager and Google
+							Analytics into the new application.
+						</li>
+					</ul>
+				</p>
+			</Card>
+
+			<Card
+				title="Emerson"
+				subtitle="Software Developer"
+				location="Berea, OH"
+				date="2018 - 2019"
+			>
+				<p>
+					Contributed to Emerson’s Commercial Residential web development team
+					as both a front-end .NET developer and Scrum Master. Involved in the
+					full lifecycle of development, including scoping out project
+					requirements, writing tickets and quality assurance.
+				</p>
+				<ul>
+					<li>
+						<b>Klauke Website Migration</b> - In a team of 6, migrated over customer,
+						media and product data to a new CMS platform. Gathered requirements and
+						led the team through Scrum events, including sprint planning and retrospective.
+					</li>
+					<li>
+						<b>Greenlee Website Migration</b> - Created a new user interface that
+						follows Emerson’s stylistic standards. Migrated over media and product
+						data to the new Emerson CMS platform. Scrum Master for a team of 6.
+					</li>
+				</ul>
+			</Card>
+
+			<Card
+				title="United Consumer Financial Services"
+				subtitle="Full-Stack Developer"
+				location="Westlake, OH"
+				date="2017 - 2018"
+			>
+				<p>
+					Contributed to the design, development, testing, maintenance and
+					enhancement of UCFS’s ASP.NET and .NET Core MVC web applications. Also
+					contributing to data warehousing and computer networking projects.
+				</p>
+				<ul>
+					<li>
+						<b>Personal Loan Application</b>- Developed a responsive web
+						application in a team of 3 for UCFS’s leading client. The
+						application allows customers to apply for a loan online and receive
+						immediate feedback on their application.
+					</li>
+					<li>
+						<b>Distributor Application</b> - Created a responsive web application
+						in a team of 2. The application allows a new potential distributor interested
+						in partnering with UCFS to apply online rather than the current paper
 						application.
-					</p>
-				</Card>
-
-				<Card
-					title="Embrace Pet Insurance"
-					subtitle="Lead Front-End Software Engineer"
-					location="Cleveland, OH"
-					date="2019 - 2023"
-				>
-					<p>
-						Front-end web developer supporting the company’s website and 3
-						customer-facing applications. Leading a team of 6 through the
-						project lifecycle, including gathering project requirements and
-						leading all Scrum events.
-						<ul>
-							<li>
-								<b>Policy Restructure</b> - Leading a team of 6 to add new policy
-								options to all internal and external applications. Responsibilities
-								include gathering requirements and writing user stories; leading
-								team through Scrum events; teaching team to use new work management
-								software, Jira. Sole front-end developer making front-end updates
-								to all internal and external applications.
-							</li>
-							<li>
-								<b>Embrace Pet Insurance Rebrand</b> - Main point of contact for
-								contractors working on the company’s customer-facing applications.
-								Created documentation, trained contractors in Embrace’s code standards
-								and performed code reviews.
-							</li>
-							<li>
-								<b>Website Migration</b> - In a team of 3, transitioned customer-facing
-								website to headless CMS. Built web scraping tool to migrate 95% of
-								website data to new site. Gathered requirements and created user
-								stories; wrote documentation for best practices and code standards;
-								and performed code reviews.
-							</li>
-							<li>
-								<b>Quote Engine Revamp</b> - In a team of 6, modernized the entire
-								tech stack of our policy purchase application. Converted the front-end
-								from AngularJS to Angular. Integrated Google Tag Manager and Google
-								Analytics into the new application.
-							</li>
-						</ul>
-					</p>
-				</Card>
-
-				<Card
-					title="Emerson"
-					subtitle="Software Developer"
-					location="Berea, OH"
-					date="2018 - 2019"
-				>
-					<p>
-						Contributed to Emerson’s Commercial Residential web development team
-						as both a front-end .NET developer and Scrum Master. Involved in the
-						full lifecycle of development, including scoping out project
-						requirements, writing tickets and quality assurance.
-					</p>
-					<ul>
-						<li>
-							<b>Klauke Website Migration</b> - In a team of 6, migrated over customer,
-							media and product data to a new CMS platform. Gathered requirements
-							and led the team through Scrum events, including sprint planning and
-							retrospective.
-						</li>
-						<li>
-							<b>Greenlee Website Migration</b> - Created a new user interface that
-							follows Emerson’s stylistic standards. Migrated over media and product
-							data to the new Emerson CMS platform. Scrum Master for a team of 6.
-						</li>
-					</ul>
-				</Card>
-
-				<Card
-					title="United Consumer Financial Services"
-					subtitle="Full-Stack Developer"
-					location="Westlake, OH"
-					date="2017 - 2018"
-				>
-					<p>
-						Contributed to the design, development, testing, maintenance and
-						enhancement of UCFS’s ASP.NET and .NET Core MVC web applications.
-						Also contributing to data warehousing and computer networking
-						projects.
-					</p>
-					<ul>
-						<li>
-							<b>Personal Loan Application</b>- Developed a responsive web
-							application in a team of 3 for UCFS’s leading client. The
-							application allows customers to apply for a loan online and
-							receive immediate feedback on their application.
-						</li>
-						<li>
-							<b>Distributor Application</b> - Created a responsive web application
-							in a team of 2. The application allows a new potential distributor
-							interested in partnering with UCFS to apply online rather than the
-							current paper application.
-						</li>
-					</ul>
-				</Card>
-			</section>
-
-			<section class="education-section">
-				<h2>Education</h2>
-				<Card
-					title="We Can Code IT"
-					subtitle="Software Engineering Certificate"
-					location="Cleveland, OH"
-					date="2017"
-				/>
-
-				<Card
-					title="Cleveland State University"
-					subtitle="M.Ed., Curriculum and Instruction"
-					location="Cleveland, OH"
-					date="2016"
-				/>
-
-				<Card
-					title="Cleveland State University"
-					subtitle="B.A., English"
-					location="Cleveland, OH"
-					date="2015"
-				/>
-			</section>
-		</div>
-
-		<div>
-			<section>
-				<h2>Skills</h2>
-				<ul class="skills-list">
-					<li>Angular</li>
-					<li>Vue.js</li>
-					<li>Nuxt</li>
-					<li>Svelte</li>
-					<li>Typescript</li>
-					<li>SASS</li>
-					<li>Python</li>
-					<li>Git</li>
-					<li>Javascript</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>React</li>
-					<li>Next.js</li>
-					<li>Scrum</li>
-					<li>Agile</li>
-					<li>GraphQL</li>
-					<li>RxJS</li>
-					<li>WCAG</li>
-					<li>Responsive design</li>
-					<li>Contentful</li>
-					<li>A/B Testing</li>
-					<li>Google Tag Manager</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Awards & Certifications</h2>
-				<ul>
-					<li>
-						<b>Certified Scrum Master (CSM)</b> through Scrum Alliance since 2019
-					</li>
-					<li><b>2020 All-Star Award</b> from Embrace Pet Insurance</li>
-					<li>
-						Numerous coworker Spot Bonus nominations at Embrace Pet Insurance
 					</li>
 				</ul>
-			</section>
+			</Card>
+		</section>
 
-			<section>
-				<h2>Additional Experience</h2>
-				<ul>
-					<li><b>Tech Ladies Leadership Accelerator</b> program, 2022</li>
-					<li><b>Volunteer</b> at Women Who Code Cleveland, 2022-present</li>
-					<li>
-						<b>Speaker</b> at Akron Software Craftsmanship meetup, August 2021
-					</li>
-				</ul>
-			</section>
-		</div>
+		<section class="education-section">
+			<h2>Education</h2>
+			<Card
+				title="We Can Code IT"
+				subtitle="Software Engineering Certificate"
+				location="Cleveland, OH"
+				date="2017"
+			/>
+
+			<Card
+				title="Cleveland State University"
+				subtitle="M.Ed., Curriculum and Instruction"
+				location="Cleveland, OH"
+				date="2016"
+			/>
+
+			<Card
+				title="Cleveland State University"
+				subtitle="B.A., English"
+				location="Cleveland, OH"
+				date="2015"
+			/>
+		</section>
+
+		<section class="skills-section">
+			<h2>Skills</h2>
+			<ul class="skills-list">
+				<li>Angular</li>
+				<li>Vue.js</li>
+				<li>Nuxt</li>
+				<li>Svelte</li>
+				<li>Typescript</li>
+				<li>SASS</li>
+				<li>Python</li>
+				<li>Git</li>
+				<li>Javascript</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>React</li>
+				<li>Next.js</li>
+				<li>Scrum</li>
+				<li>Agile</li>
+				<li>GraphQL</li>
+				<li>RxJS</li>
+				<li>WCAG</li>
+				<li>Responsive design</li>
+				<li>Contentful</li>
+				<li>A/B Testing</li>
+				<li>Google Tag Manager</li>
+			</ul>
+		</section>
+
+		<section class="awards-section">
+			<h2>Awards & Certifications</h2>
+			<ul>
+				<li>
+					<b>Certified Scrum Master (CSM)</b> through Scrum Alliance since 2019
+				</li>
+				<li><b>2020 All-Star Award</b> from Embrace Pet Insurance</li>
+				<li>
+					Numerous coworker Spot Bonus nominations at Embrace Pet Insurance
+				</li>
+			</ul>
+		</section>
+
+		<section class="additional-info-section">
+			<h2>Additional Experience</h2>
+			<ul>
+				<li><b>Tech Ladies Leadership Accelerator</b> program, 2022</li>
+				<li><b>Volunteer</b> at Women Who Code Cleveland, 2022-present</li>
+				<li>
+					<b>Speaker</b> at Akron Software Craftsmanship meetup, August 2021
+				</li>
+			</ul>
+		</section>
 	</div>
 </Layout>
 
 <style>
 	.content-container {
 		display: grid;
-		grid-template-columns: 2fr 1fr;
-		grid-gap: 4rem;
-	}
-
-	section {
-		gap: 2rem;
-		padding: 2rem;
-	}
-
-	section p,
-	h2 {
-		margin: 0;
+		gap: 2.5rem;
+		padding-top: 3rem;
 	}
 
 	.experience-section {
@@ -231,12 +214,10 @@ import Card from '../components/Card.astro';
 
 	.education-section {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		width: fit-content;
 	}
 
-	.education-section h2 {
-		grid-column: span 2;
+	.skills-list {
+		column-count: 2;
 	}
 
 	ul:not(.skills-list) li {
@@ -244,14 +225,67 @@ import Card from '../components/Card.astro';
 		padding-top: 0.5rem;
 	}
 
-	.skills-list {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 1rem;
-		padding-left: 0;
+	section {
+		gap: 2rem;
+	}
+
+	section p,
+	h2 {
+		margin: 0;
 	}
 
 	h1 {
 		margin-bottom: 1rem;
+	}
+
+	@media screen and (min-width: 768px) {
+		.content-container {
+			grid-template-areas:
+				'roles roles skills'
+				'roles roles awards'
+				'roles roles additional'
+				'roles roles .'
+				'education education education';
+			padding-bottom: 5rem;
+		}
+
+		.experience-section {
+			grid-area: roles;
+		}
+
+		.education-section {
+			grid-area: education;
+			display: grid;
+			width: fit-content;
+			height: fit-content;
+		}
+		.education-section h2 {
+			grid-column: span 3;
+		}
+
+		.skills-section {
+			grid-area: skills;
+			max-width: fit-content;
+		}
+
+		.awards-section {
+			grid-area: awards;
+		}
+
+		.additional-info-section {
+			grid-area: additional;
+		}
+	}
+
+	@media screen and (min-width: 2100px) {
+		.content-container {
+			grid-template-areas:
+				'roles skills'
+				'roles awards'
+				'roles additional'
+				'roles education'
+				'roles .';
+		}
+		column-gap: 6rem;
 	}
 </style>
