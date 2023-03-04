@@ -38,7 +38,7 @@ import Card from '../components/Card.astro';
 						customer-facing applications. Leading a team of 6 through the
 						project lifecycle, including gathering project requirements and
 						leading all Scrum events.
-						<ul class="achievements">
+						<ul>
 							<li>
 								<b>Policy Restructure</b> - Leading a team of 6 to add new policy
 								options to all internal and external applications. Responsibilities
@@ -82,7 +82,7 @@ import Card from '../components/Card.astro';
 						full lifecycle of development, including scoping out project
 						requirements, writing tickets and quality assurance.
 					</p>
-					<ul class="achievements">
+					<ul>
 						<li>
 							<b>Klauke Website Migration</b> - In a team of 6, migrated over customer,
 							media and product data to a new CMS platform. Gathered requirements
@@ -109,7 +109,7 @@ import Card from '../components/Card.astro';
 						Also contributing to data warehousing and computer networking
 						projects.
 					</p>
-					<ul class="achievements">
+					<ul>
 						<li>
 							<b>Personal Loan Application</b>- Developed a responsive web
 							application in a team of 3 for UCFS’s leading client. The
@@ -128,26 +128,26 @@ import Card from '../components/Card.astro';
 
 			<section class="education-section">
 				<h2>Education</h2>
-				<div>
-					<h3>We Can Code IT</h3>
-					<p>Software Engineering Certificate</p>
-					<p>Cleveland, OH</p>
-					<p>2017</p>
-				</div>
+				<Card
+					title="We Can Code IT"
+					subtitle="Software Engineering Certificate"
+					location="Cleveland, OH"
+					date="2017"
+				/>
 
-				<div>
-					<h3>Cleveland State University</h3>
-					<p>M.Ed., Curriculum and Instruction</p>
-					<p>Cleveland, OH</p>
-					<p>2016</p>
-				</div>
+				<Card
+					title="Cleveland State University"
+					subtitle="M.Ed., Curriculum and Instruction"
+					location="Cleveland, OH"
+					date="2016"
+				/>
 
-				<div>
-					<h3>Cleveland State University</h3>
-					<p>B.A., English</p>
-					<p>Cleveland, OH</p>
-					<p>2015</p>
-				</div>
+				<Card
+					title="Cleveland State University"
+					subtitle="B.A., English"
+					location="Cleveland, OH"
+					date="2015"
+				/>
 			</section>
 		</div>
 
@@ -175,7 +175,7 @@ import Card from '../components/Card.astro';
 					<li>WCAG</li>
 					<li>Responsive design</li>
 					<li>Contentful</li>
-					<li>A/B Testing (Optimizely, Kameleoon)</li>
+					<li>A/B Testing</li>
 					<li>Google Tag Manager</li>
 				</ul>
 			</section>
@@ -214,39 +214,41 @@ import Card from '../components/Card.astro';
 		grid-gap: 4rem;
 	}
 
+	section {
+		gap: 2rem;
+		padding: 2rem;
+	}
+
+	section p,
+	h2 {
+		margin: 0;
+	}
+
 	.experience-section {
 		display: flex;
 		flex-direction: column;
-		row-gap: 2rem;
-		/* background-color: var(--color-secondary_s30); */
-		padding: 2rem;
-		border-radius: 0.4rem;
-	}
-
-	.experience-section p,
-	h2 {
-		margin: 0;
 	}
 
 	.education-section {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		width: fit-content;
 	}
 
 	.education-section h2 {
 		grid-column: span 2;
 	}
 
+	ul:not(.skills-list) li {
+		list-style-type: disc;
+		padding-top: 0.5rem;
+	}
+
 	.skills-list {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		row-gap: 1rem;
-		padding: 0;
-	}
-
-	.achievements li {
-		list-style-type: disc;
-		padding-top: 0.5rem;
+		padding-left: 0;
 	}
 
 	h1 {
