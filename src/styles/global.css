@@ -1,0 +1,22 @@
+:root {
+	/* add some fonts
+	https://fonts.google.com/specimen/Press+Start */
+	--color-primary: #2b2d42;
+	--color-secondary: #8d99ae;
+	--color-secondary_s50: #edf2f4;
+	--color-accent: #d90429;
+	--color-accent_s80: #ef233c;
+	--black: #000;
+	--white: #fff;
+
+	font-size: 10px;
+}
+
+body {
+	background-color: var(--color-primary);
+	color: var(--white);
+}
+
+li {
+	list-style: none;
+}
