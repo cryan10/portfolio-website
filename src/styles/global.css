@@ -1,11 +1,12 @@
 :root {
 	/* add some fonts
 	https://fonts.google.com/specimen/Press+Start */
-	--color-primary: #2b2d42;
-	--color-secondary: #8d99ae;
-	--color-secondary_s30: rgba(141, 153, 174, 0.3);
-	--color-accent: #d90429;
-	--color-accent_s80: #ef233c;
+	--color-primary: #031424;
+	--color-secondary: #30415d;
+	/* --color-secondary_s30: rgba(141, 153, 174, 0.3); */
+	--color-tertiary: #8eaebd;
+	--color-accent: #cf6766;
+	/* --color-accent_s80: #ef233c; */
 	--black: #333;
 	--gray: #666;
 	--white: #fff;
@@ -14,7 +15,7 @@
 }
 
 body {
-	background-color: var(--color-primary);
+	background-color: var(--color-secondary);
 	color: var(--white);
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
@@ -25,7 +26,11 @@ body {
 }
 
 a {
-	color: var(--white);
+	color: var(--color-secondary);
+}
+
+a:hover {
+	color: var(--color-accent);
 }
 
 li {

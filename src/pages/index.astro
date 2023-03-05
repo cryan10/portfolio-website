@@ -3,71 +3,82 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<div
-		class="container"
-		role="presentation"
-	>
-		<div
-			class="hero"
+	<div class="home">
+		<section
+			class="container"
 			role="presentation"
 		>
-			<h1>Carrie Ryan</h1>
-			<p>Frontend Engineer from Cleveland, OH</p>
-		</div>
-		<div
-			class="bio"
-			role="presentation"
-		>
-			<p>
-				Hello! &#128075; My name is Carrie and I am frontend web developer from
-				Cleveland, Ohio. I've been a developer since 2017, and I love frontend
-				development. I'm a firm believer in writing straightforward code. I get
-				so much joy from writing a function that reads like a sentence.
-				Simplicity, so beautiful.
-			</p>
-			<p>
-				I'm fascinated with accessibility and Atomic Design. I try to stay on
-				top of the latest tech. For example, this website is built with Astro!
-				It's incredible to see all the things that are happening with CSS, and
-				how maybe we won't need SASS or LESS in the next 10 years.
-			</p>
-			<p>
-				I enjoy learning from others and mentoring less experienced teammates. I
-				like to approach every pairing session with 2 corny, but true sayings in
-				mind: "There's no such thing as a dumb question" and "When one of us
-				shines, we all shine."
-			</p>
-			<p>
-				I also really like learning about Scrum and Agile. I've been a Certified
-				Scrum Master with Scrum Alliance since 2019. I like writing tickets and
-				leading Scrum events like Retrospectives. I've been told I lead
-				effective group discussions that encourage all teammates participate,
-				and end with actionable items.
-			</p>
-			<p>
-				I'm a creative spirit at heart. In my free time, I like to write and
-				make music. I've played guitar for over 15 years, and I just recently
-				started piano! I also love running, biking and aerial arts.
-			</p>
-			<p>
-				If we haven't already, let's connect on
-				<a
-					href="https://www.linkedin.com/in/carrieryan10/"
-					target="_blank"
-				>
-					LinkedIn.
-				</a> Thanks for stopping by!
-			</p>
-		</div>
+			<div
+				class="hero"
+				role="presentation"
+			>
+				<h1>Carrie Ryan</h1>
+				<p>Frontend Engineer from Cleveland, OH</p>
+			</div>
+			<div
+				class="bio"
+				role="presentation"
+			>
+				<p>
+					Hello! &#128075; My name is Carrie and I am frontend web developer
+					from Cleveland, Ohio. I've been a developer since 2017, and I love
+					frontend development. I'm a firm believer in writing straightforward
+					code. I get so much joy from writing a function that reads like a
+					sentence. Simplicity, so beautiful.
+				</p>
+				<p>
+					I'm fascinated with accessibility and Atomic Design. I try to stay on
+					top of the latest tech. For example, this website is built with Astro!
+					It's incredible to see all the things that are happening with CSS, and
+					how maybe we won't need SASS or LESS in the next 10 years.
+				</p>
+				<p>
+					I enjoy learning from others and mentoring less experienced teammates.
+					I like to approach every pairing session with 2 corny, but true
+					sayings in mind: "There's no such thing as a dumb question" and "When
+					one of us shines, we all shine."
+				</p>
+				<p>
+					I also really like learning about Scrum and Agile. I've been a
+					Certified Scrum Master with Scrum Alliance since 2019. I like writing
+					tickets and leading Scrum events like Retrospectives. I've been told I
+					lead effective group discussions that encourage all teammates
+					participate, and end with actionable items.
+				</p>
+				<p>
+					I'm a creative spirit at heart. In my free time, I like to write and
+					make music. I've played guitar for over 15 years, and I just recently
+					started piano! I also love running, biking and aerial arts.
+				</p>
+				<p>
+					If we haven't already, let's connect on
+					<a
+						href="https://www.linkedin.com/in/carrieryan10/"
+						target="_blank"
+					>
+						LinkedIn.</a
+					> Thanks for stopping by!
+				</p>
+			</div>
+		</section>
 	</div>
 </Layout>
 
 <style>
+	.home,
 	.container {
 		display: grid;
 		justify-items: center;
+	}
+
+	.container {
 		grid-template-rows: 1fr auto;
-		margin: 4rem;
+		margin: 4rem 0;
+		background-color: white;
+		border-radius: 0.6rem;
+		color: var(--color-primary);
+		padding: 3rem;
+		max-width: 140rem;
 	}
 	.hero {
 		text-align: center;
@@ -77,12 +88,13 @@ import Layout from '../layouts/Layout.astro';
 	}
 	h1 {
 		font-family: 'Press Start 2P', serif;
+		color: var(--color-accent);
 		font-size: 3.2rem;
 	}
 
 	@media screen and (min-width: 768px) {
 		.container {
-			grid-row-gap: 3rem;
+			margin: 4rem;
 		}
 	}
 </style>

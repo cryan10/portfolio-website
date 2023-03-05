@@ -21,7 +21,7 @@ const { title, subtitle, date, location } = Astro.props as Props;
 <style>
 	div {
 		background-color: var(--white);
-		color: var(--black);
+		color: var(--color-primary);
 		padding: 2rem;
 		border-radius: 0.6rem;
 		max-width: fit-content;
@@ -29,8 +29,11 @@ const { title, subtitle, date, location } = Astro.props as Props;
 	}
 
 	h3 {
-		color: var(--color-accent);
 		margin: 0 0 0.5rem;
+	}
+
+	strong {
+		color: var(--color-accent);
 	}
 
 	ul {
@@ -39,7 +42,7 @@ const { title, subtitle, date, location } = Astro.props as Props;
 	}
 
 	li:not(.subtitle) {
-		color: var(--gray);
+		color: var(--color-secondary);
 		font-size: 1.4rem;
 	}
 </style>
