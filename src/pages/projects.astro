@@ -1,66 +1,124 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
 ---
 
 <Layout>
 	<h1>Projects</h1>
 
 	<h2>Presentations</h2>
-	<h3>Atomic Design</h3>
-	<ul>
-		<li>Embrace Pet Insurance Tech Department Lunch & Learn</li>
-		<li>Presentation to Embrace Pet Insurance Marketing Team</li>
-		<li>2022</li>
-	</ul>
-	<p></p>
-
-	<h3>Leveraging Web Scraping for Website Migrations</h3>
-	<ul>
-		<li>Akron Software Craftmanship Meetup & Embrace Pet Insurance</li>
-		<li>2022</li>
-	</ul>
-	<p>
-		This presentation stemmed from a problem we needed to solve at a previous
-		role. We were in the midst of a website migration, and realized the content
-		in the Content Management System (CMS) was <em>exceptionally</em> messy. I'm
-		talking multiple instances of the same blog post, with absolutely no clear indication
-		why there were multiples and which option was the source of truth. We were anticipating
-		having to write some gnarly SQL, and estimating it would take months to accomplish.
-	</p>
-	<p>
-		But then we remembered we only needed to pull static data from the website
-		(author names, dates, metadata, etc). We leveraged web scraping (via
-		BeautifulSoup) to grab the data instead of relying on the messy database. A
-		project estimated to take <i>months</i> ended up taking <i>a couple weeks</i
-		>! &#127881;
-	</p>
-	<p>
-		This was my first-ever presentation at a meetup. I was SO nervous and I can
-		hear it all over this video. But I'm also exceptionally proud with how this
-		demo went and that I put myself out there.
-	</p>
-	<p>
-		Thanks again to the Akron Software Craftsmanship Meetup for having me! Go
-		ahead and watch the recording below:
-	</p>
-	<iframe
-		width="560"
-		height="315"
-		src="https://www.youtube.com/embed/c27Mk6JVctQ"
-		title="YouTube video player"
-		frameborder="0"
-		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-		allowfullscreen
-	></iframe>
-	<!-- https://www.youtube.com/watch?v=c27Mk6JVctQ -->
+	<Card
+		title="Atomic Design"
+		location="Embrace Pet Insurance Tech & Marketing Department Presentations"
+		date="2022"
+	>
+		<p></p>
+	</Card>
+	<Card
+		title="Leveraging Web Scraping for Website Migrations"
+		location="Akron Software Craftmanship Meetup"
+		date="2022"
+	>
+		<p>
+			This presentation stemmed from a problem we needed to solve at a previous
+			role. We were in the midst of a website migration, and realized the
+			content in the Content Management System (CMS) was <em>exceptionally</em> messy.
+			I'm talking multiple instances of the same blog post, with absolutely no clear
+			indication why there were multiples and which option was the source of truth.
+			We were anticipating having to write some gnarly SQL, and estimating it would
+			take months to accomplish.
+		</p>
+		<p>
+			But then we remembered we only needed to pull static data from the website
+			(author names, dates, metadata, etc). We leveraged web scraping (via
+			BeautifulSoup) to grab the data instead of relying on the messy database.
+			A project estimated to take <i>months</i> ended up taking <i
+				>a couple weeks</i
+			>! &#127881;
+		</p>
+		<p>
+			This was my first-ever presentation at a meetup. I was SO nervous and I
+			can hear it all over this video. But I'm also exceptionally proud with how
+			this demo went and that I put myself out there.
+		</p>
+		<p>
+			Thanks again to the Akron Software Craftsmanship Meetup for having me! Go
+			ahead and watch the recording below.
+		</p>
+		<ul class="project-links">
+			<li>
+				<a
+					href="https://www.youtube.com/watch?v=c27Mk6JVctQ"
+					target="_blank"
+				>
+					Recording of Meetup
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://docs.google.com/presentation/d/1zdJJzOwvmITkE8QdOPMGL54DYCl8qvaJtd4q41ZWUyw/edit?usp=sharing"
+					target="_blank"
+				>
+					Slides
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://colab.research.google.com/drive/1VsG-qOuArH9c5s1rVT5MnjZntyT-yUGd?usp=sharing"
+					target="_blank"
+				>
+					Google CoLab Notebook
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/cryan10/webscraping-demo">
+					Repo for migrating content to Contentful
+				</a>
+			</li>
+		</ul>
+		<iframe
+			width="560"
+			height="315"
+			src="https://www.youtube.com/embed/c27Mk6JVctQ"
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen
+		></iframe>
+	</Card>
 
 	<h2>Projects</h2>
+	<p>
+		To borrow a term from <a href="https://joelhooks.com/digital-garden/"
+			>Joel Hooks</a
+		>, I like to think of my <a
+			href="https://github.com/cryan10"
+			target="_blank"
+			>Github account</a
+		> as my "digital garden." There are flowers, weeds and truthfully some dead plants
+		in there I keep forgetting to water. But it contains so many projects, from as
+		far back as my time in coding bootcamp.
+	</p>
 	<p>
 		I'm currently working on making this section beautiful. In the meantime,
 		please check out my <a
 			href="https://github.com/cryan10"
 			target="_blank"
 			>Github account</a
-		>
+		>.
 	</p>
 </Layout>
+
+<style>
+	.project-links a {
+		color: var(--black);
+	}
+
+	.project-links a:hover {
+		color: var(--color-accent);
+	}
+
+	li {
+		list-style-type: disc;
+	}
+</style>
