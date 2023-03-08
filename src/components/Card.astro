@@ -8,7 +8,7 @@ export interface Props {
 const { title, subtitle, date, location } = Astro.props as Props;
 ---
 
-<div>
+<div role="presentation">
 	<h3>{title}</h3>
 	<ul>
 		<li class="subtitle"><strong>{subtitle}</strong></li>
